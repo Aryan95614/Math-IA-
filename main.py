@@ -3,7 +3,7 @@ import math
 mean = 41.46153846
 standard = 12.64068757
 
-intervals = 50
+intervals = 50 #    ONLY THIS NEEDS TO CHANGE, NOTHING ELSE FOR THE INTERVALS
 width = (2*standard)/intervals
 
 def function(val, mean=mean, standard=standard):
@@ -24,7 +24,7 @@ while intervals > 0:
     rightRiemann -= width
     intervals -= 1
 
-print(values)
+
 
 print(sum(list(map(function, values))))
 
